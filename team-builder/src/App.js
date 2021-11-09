@@ -38,9 +38,13 @@ function App() {
           submit={submitForm}
         />
       </header>
-      {teamMembers.map((member, index) => (
-        <Member key={index} details={member} />
-      ))}
+      <div className='body'>
+        <div className='member-container'>
+          {teamMembers.map((member, index) => (
+            <Member key={index} details={member} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

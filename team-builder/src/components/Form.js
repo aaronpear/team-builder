@@ -1,4 +1,5 @@
 import React from "react";
+import '../App.css';
 
 const Form = (props) => {
     const { values, update, submit } = props;
@@ -59,9 +60,7 @@ const Form = (props) => {
                         </option>
                     </select>
                 </label>
-                <div className='submit'>
-                    <button disabled={!values.name || !values.email || !values.role}>submit</button>
-                </div>
+                <button className='submit' disabled={!values.name || !values.email || !values.role}>submit</button>
             </div>
         </form>
     );
