@@ -25,6 +25,7 @@ const Form = (props) => {
                         name='name'
                         value={values.name}
                         onChange={onChange}
+                        maxLength='35'
                     />
                 </label>
                 <label>Email
